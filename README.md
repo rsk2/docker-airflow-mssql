@@ -9,15 +9,10 @@ Tested: Built and ran this on my local machine using [Docker for windows](https:
 Commands (would be the same as mentioned in the readme file here https://github.com/puckel/docker-airflow):
 1. Build
     
-    docker build -t puckel/docker-airflow .
-    
-Optionally you can install dependencies:
-
-    docker build --rm --build-arg AIRFLOW_DEPS="datadog,dask" -t puckel/docker-airflow .
-    docker build --rm --build-arg PYTHON_DEPS="flask_oauthlib>=0.9" -t puckel/docker-airflow .
+    docker build -t mssql-airflow .
     
  2. Run 
  
-     docker run -d -p 8080:8080 puckel/docker-airflow webserver
+     docker run -d -p 8080:8080 mssql-airflow webserver
 
 
